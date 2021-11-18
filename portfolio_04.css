@@ -1,0 +1,187 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:Nunito;
+
+}
+body{
+   
+    background-image: linear-gradient(45deg,#afd9d5,#d5d8d7,#77d0cf,#a7c6d2,#75b3cf);
+
+}
+#navbar{
+    height:5vh;
+    width:100%;
+    top:0px;
+    position:fixed;
+    z-index:1;
+    
+}
+h1{
+    font-size:2em;
+}  
+  
+#navbar ul{
+    position:relative;
+    width:30%;
+    height:inherit;
+    float:right;
+    display:flex;
+    max-width:100%;
+    
+    
+}
+#navbar ul a{
+    margin:2%;
+    text-decoration:none;
+    font-weight:bold;
+}
+#navbar ul li{
+    list-style-type: none;      
+}
+
+#home{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#title_div{
+    width:fit-content;
+}
+#heading{
+    text-align:center;
+    padding:30px;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 30s slider infinite;
+}
+
+#slider figure div {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    float: left;
+    height: 100vh;    
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    10% {
+        left: 0;
+    }
+    20% {
+        left: -100%;
+    }
+    30% {
+        left: -100%;
+    }
+    40% {
+        left: -200%;
+    }
+    50% {
+        left: -200%;
+    }
+    60% {
+        left: -300%;
+    }
+    70% {
+        left: -300%;
+    }
+    80% {
+        left: -400%;
+    }
+    90% {
+        left: -400%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+#slider figure div img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 80%;
+}
+#slider figure div #descriptions{
+    width:80%;
+    height:5vh;
+    margin:0 auto;
+    text-align:center;
+    padding:20px;
+}
+
+#projects div{
+    width:90%;
+    margin:0 auto;
+}
+
+
+#video-div iframe{
+    width:100%;
+    height:50vh;
+    margin:0 auto;
+}
+
+#row_2 div img{
+    width:31%;
+    height:30vh;
+    max-width:100%;
+    
+}
+@media(max-width:500px){
+    #navbar ul{
+        
+        position:relative;
+        float:left;
+        width:80%;
+    }
+    #img-div{
+        display:flex;
+        flex-direction:column;
+    }
+    #row_2 div img{
+        width:100%;
+        margin:10px 0px;
+    }
+}
+
+#contact{
+    height:100vh;
+
+}
+#contact_heading{
+    height:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#contact_img{
+    display:flex;
+    width:fit-content;
+    margin:0 auto;
+}
+#contact_img div{
+  margin:10px;
+  border-radius:15%;
+  box-shadow: 5px 5px 5px 5px;
+}
+
+
+
+#contact_img div img{
+    width:70px;
+    height:75px;  
+}
