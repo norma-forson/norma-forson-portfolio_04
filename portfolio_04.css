@@ -1,0 +1,184 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:"Open Sans", sans-serif;
+    color:white;
+    
+
+}
+#header{
+    position:fixed;
+    top:0px;
+    width:100vw;
+    height:10vh;
+    background-color:rgba(0,0,0,0.6);
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    
+}
+
+#navbar ul{
+    display:flex;
+    list-style-type:none;
+    justify-content: center;
+}
+#navbar ul a{
+    text-decoration:none;
+    margin:2vw;
+}
+#home{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    background-image:url(https://media.istockphoto.com/illustrations/abstract-light-blue-background-illustration-id1305346022?k=20&m=1305346022&s=612x612&w=0&h=J6VOMeimZ-qsF97Vjy-sRgnr83nrXrLtp1Onieq-k7U=);
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+}
+#contact{
+    width:100vw;
+    height:100vh;
+    background-image: url(https://media.istockphoto.com/vectors/abstract-light-blue-vector-background-vector-id1301452300?k=20&m=1301452300&s=612x612&w=0&h=A5hqzPpjKoo-cdZMsE111ZN8HiXExQKYkROs0l91ofM=);
+    background-size:cover;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#about{
+    width:100vw;
+    background-color:#8cd9f8;
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about_heading{
+    height:30vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#slider{
+    width:80vw;
+    padding:10px 10px;
+    background-color:rgba(0,0,0,0.6);
+    
+}
+.slides{
+    display:flex;
+}
+#slide{
+    flex-direction:row-reverse;
+}
+.descriptions{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:40%;
+    padding:0px 20px;
+}
+#projects{
+    width:100vw;
+    background-color:#bfe6f5;
+}
+
+#project_items{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#heading{
+    height:30vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;  
+}
+#row_1{
+    background-color:rgba(0,0,0,0.6);
+    width:80vw;
+    padding:10px;
+    
+}
+#row_1 div{
+    display:flex;
+}
+#row_2{
+    background-color:rgba(0,0,0,0.6);
+    width:80vw;
+    padding:10px;
+    margin-top:20px;
+}
+#row_2 img{
+    width:26vw;
+    height:28vh;
+}
+#video_2{
+    display:flex;
+    flex-direction:row-reverse;
+}
+#descriptions{
+    padding:50px 0px
+}
+iframe{
+    width: 39vw;
+    height:39vw;
+}
+
+img{
+    width:35vw;
+    height:35vw;
+}
+#contact_img{
+    display:flex;
+}
+
+#contact_img div a img{
+    width:8vw;
+    height:8vw;
+}
+@media(max-width:500px){
+    .slides{
+        display:flex;
+        flex-direction:column;
+    }
+    .slides img{
+        width:100%;
+        height:60%;
+        max-width: 100%;   
+    }
+    #slide{
+        display:flex;
+        flex-direction:column;
+    }
+    #slide img{
+        width:100%;
+        max-width:100%;
+    }
+    .descriptions{
+        width:100%;
+        padding:20px 0px;
+    }
+    #row_1 div{
+        display:flex;
+        flex-direction:column;
+    }
+    
+    #row_1 div .video-div iframe{
+        width:100%;
+    }
+    #row_2 #img-div img{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        padding:20px 0px;
+    }
+}
